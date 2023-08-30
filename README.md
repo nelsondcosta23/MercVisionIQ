@@ -21,6 +21,7 @@ O objetivo do uso da GPU é acelerar o treino da CNN. Para tal foi necessário s
 - https://www.tensorflow.org/install/pip?hl=pt-br
 ## Dataset usado
 Para treino e teste da rede neuronal foram usadas 26319 imagens de treino e 169 de teste de viaturas pertencentes a 23 classes(modelos). 
+!ATENÇÃO! É necessário que as viaturas estejam organizadas em pastas com o respetivo modelo, uma vez que cada modelo corresponde a uma classe.
 
 Enquanto que para o treino tende-se a dar preferência a imagens cuidadas, para o teste queremos imagens próximas da realidade para obtermos uma precisão de classificação realista.
 

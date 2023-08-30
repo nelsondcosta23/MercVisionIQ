@@ -130,6 +130,20 @@ São dados em percentagem, quanto mais próximo do 1 melhor. É importante ter e
 | Precisão       | 0.88 |
 
 ## Reconhecimento de Cor
-O reconhecimento de cor recorre ao algoritmo de agrupamento K-means com 3 clusters e está inserido no script que corre o formulário de interface.
+O reconhecimento de cor recorre ao algoritmo de agrupamento K-means com 3 clusters e está inserido no script que corre o formulário de interface. No script 'forms'
+## Requerimentos
+Além dos anteriores:
+```bash
+import pyforms
+from pyforms import BaseWidget
+from pyforms.controls import ControlText, ControlButton
+from tkinter import *
+from tkinter.filedialog import askopenfilename,askdirectory
+from sklearn.cluster import KMeans
+import webcolors
+import PIL
+from PIL import Image, ImageTk
+```
+ 
 
 Mais informações sobre K-means: https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a

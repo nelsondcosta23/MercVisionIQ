@@ -1,5 +1,6 @@
 
-# Cartas da Maia
+# MercVisionIQ
+
 
 Este projeto consiste numa aplicação de redes neuronais convolucionais para a classificação dos modelos das viaturas Mercedes Benz e smart, seguida da identificação de cores através do algoritmo de agrupamento K-means.
 

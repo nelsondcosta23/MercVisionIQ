@@ -75,7 +75,7 @@ As transformações usadas foram:
 Os scripts foram disponibilizados. ATENÇÃO: as transformações foram aplicadas com prudência, uma vez que as imagens têm de manter o realismo.
 
 ## Rede Neuronal
-Após redimensionamento das imagens para 256x256 (através de cv2.resize) e escaladas para [0,1], iniciou-se o treino da rede neuronal.
+Após redimensionamento das imagens para 256x256 (através de cv2.resize) e escaladas para [0,1], iniciou-se o treino da rede neuronal. !DICAS! usar camadas de normalização (batch normalization) e usar pooling layers depois de camadas convolucionais. Quanto maior o número de filtros, mais parâmetros são processados e mais features são detetadas, mas mais 'pesado' fica o treino.
 ```bash
 model = keras.Sequential(
         [
@@ -130,8 +130,13 @@ São dados em percentagem, quanto mais próximo do 1 melhor. É importante ter e
 | Perdas     | 0.82 |
 | Precisão       | 0.88 |
 
+## Possíveis limitações
+Overfitting - o modelo fica muito dependente dos dados de treino e não consegue classificar corretamente dados não vistos ( imagens que não fazem parte do dataset treino). Causas possíveis: poucos dados de treino, uso de loss function não adequado, modelo muito complexo. Para detetar este fenómeno, estar atento ao valor da loss function ( = cost function) e se este se mantiver constante pode ser devido ao overfitting.
+
+O uso de redes neuronais é um processo de aprendizagem supervisionado ( 'supervised'), o que significa que é necessário que os dados tenham 'label'.
+
 ## Reconhecimento de Cor
-O reconhecimento de cor recorre ao algoritmo de agrupamento K-means com 3 clusters e está inserido no script que corre o formulário de interface. No script 'forms'
+O reconhecimento de cor recorre ao algoritmo de agrupamento K-means com 3 clusters e está inserido no script que corre o formulário de interface. Por outro lado, este processo é não supervisionado. No script 'forms':
 ## Requerimentos
 Além dos anteriores:
 ```bash

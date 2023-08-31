@@ -123,6 +123,9 @@ model.save("./modelo_cnn_modelos/marca_modelo_sgd5.h5")
 model = tf.keras.models.load_model("./modelo_cnn_modelos/marca_modelo_sgd3.h5")
 ```
 
+## Transfer Learning
+O algoritmo marcas-sgd3_tfl é semelhante ao algoritmo marcas_sgd3, contudo utilizar um modelo de rede neuronal diferente. De modo a poupar tempo e recursos no treino da rede neuronal, pode-se utilizar uma versão de modelo CNN de classificação convencional tal como o AlexNet, Inception, ResNet, já treinado numa base de dados que faça sentido (ex. ImageNet). Desta forma, abdica-se de treinar o modelo, colocando umas camadas 'header' de compatibilidade, podendo obter-se uma precisão razoável ( o que não foi o caso ). Colocando ainda as camadas para não treinar.
+
 ## Resultados
 São dados em percentagem, quanto mais próximo do 1 melhor. É importante ter em atenção a precisão de treino, mas a de teste é mais importante. Neste caso, em 169 imagens classificou corretamente 88%.
 | Rede            |                                                 |
@@ -150,6 +153,8 @@ import webcolors
 import PIL
 from PIL import Image, ImageTk
 ```
+## Possíveis melhorias
+- Mostrar imagem que se quer classificar no formulário
  
 
 Mais informações sobre K-means: https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a

@@ -54,27 +54,18 @@ class window():
         ###########
         
         self.root = Tk()
-        # self.catalogo = "https://workplace2.soccsantos.cloud/upload/foto_bonita/"
-        # self.save_file_path = "./Imagens a Cortar/"
-        # self.excel_path = "./Registo_Catalogo_2.xlsx"
-        # self.folder_path_fotos = "./Fotos/"
-        # self.excel_cortar_path = "./Imagens_a_Cortar.xlsx"
-        # self.path_modeloModelo = "./mercvision17_0.94175.h5"
-        # self.path_modeloModelo_pesos = "./mercvision_pesos_sg17.hdf5"
-        # self.path_modeloCor = "./color_model.h5"
-        # self.logo = "./logo.png"
-        # self.temp_folder = "./website_temp/"
-        # #
         self.catalogo = "https://workplace2.soccsantos.cloud/upload/foto_bonita/"
-        self.save_file_path = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_fina/Imagens a Cortar/"
-        self.excel_path = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/Registo_Catalogo_2.xlsx"
-        self.folder_path_fotos = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/Fotos/"
-        self.excel_cortar_path = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/Imagens_a_Cortar.xlsx"
-        self.path_modeloModelo = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/mercvision17_0.94175.h5"
-        self.path_modeloModelo_pesos = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/mercvision_pesos_sg17.hdf5"
-        self.path_modeloCor = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/color_model.h5"
-        self.logo = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/logo.png"
-        self.temp_folder = "C:/Users/joaog/OneDrive/Ambiente de Trabalho/outros/mercedes/MercVisionIQ/MercVision_final/website_temp/"
+        self.save_file_path = "./Imagens a Cortar/"
+        self.excel_path = "./Registo_Catalogo_2.xlsx"
+        self.folder_path_fotos = "./Fotos/"
+        self.excel_cortar_path = "./Imagens_a_Cortar.xlsx"
+        self.path_modeloModelo = "./mercvision17_0.94175.h5"
+        self.path_modeloModelo_pesos = "./mercvision_pesos_sg17.hdf5"
+        self.path_modeloCor = "./color_model.h5"
+        self.logo = "./logo.png"
+        self.temp_folder = "./website_temp/"
+        # #
+
         
         self.status = str()
         self.path_foto = str()

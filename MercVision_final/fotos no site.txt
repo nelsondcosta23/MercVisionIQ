@@ -1,0 +1,10 @@
+AU-59-JH 44 
+AU-31-LF EQE
+AT-18-DL ClasseA
+AT-11-DO ClasseA
+AR-16-XU EQS
+AN-16-CD GLA(156)
+AL-36-UQ ClasseC(205)
+AB-32-AC ForTwo
+02-UX-15 ClasseE
+06-XT-27 ClasseA

@@ -59,8 +59,8 @@ class window():
         self.excel_path = "./Registo_Catalogo_2.xlsx"
         self.folder_path_fotos = "./Fotos/"
         self.excel_cortar_path = "./Imagens_a_Cortar.xlsx"
-        self.path_modeloModelo = "./mercvision17_0.94175.h5"
-        self.path_modeloModelo_pesos = "./mercvision_pesos_sg17.hdf5"
+        self.path_modeloModelo = "./mercvision19.h5"
+        self.path_modeloModelo_pesos = "./mercvision_pesos_sg19.hdf5"
         self.path_modeloCor = "./color_model.h5"
         self.logo = "./logo.png"
         self.temp_folder = "./website_temp/"
@@ -100,7 +100,7 @@ class window():
         imagem_1 = tf.expand_dims(np.array(imagem_1).astype("float32") / 255, 0)   
         pred_modelo = model_modelo.predict(imagem_1)
         pred_modelo = np.argmax(pred_modelo)
-        marcas = ['Citan','CLA','ClasseA','ClasseB','ClasseC(205)','ClasseC(206)','ClasseE','ClasseS','CLS','EQA','EQB','EQC','EQE','EQS','ForFour Novo','ForTwo Novo','ForFour','ForTwo','GLA(156)','GLA','GLB','GLC','GLE','SL','Vito']
+        marcas = ['Citan','CLA','ClasseA','ClasseA_limo','ClasseB','ClasseC(205)','ClasseC(206)','ClasseE','ClasseS','CLS','EQA','EQB','EQC','EQE','EQS','ForFour Novo','ForTwo Novo','ForFour','ForTwo','GLA(156)','GLA','GLB','GLC','GLE','SL','Vito']
         #### Cor
         model_cor = tf.keras.models.load_model(self.path_modeloCor)
         tipo_img = path.split(".")[1]
